@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        body{
+            padding-top: 5%;
+            background-color: aqua;
+        }
+       .text-center {
+            text-align: center;
+        }
+        */
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- CSS only -->
+<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">-->
+</head>
+<body class="body">
+    <h1 class="text-center">Formulaire HTML5 + bootstrap</h1><br>
+<div class="d-flex justify-content-center">
+    
+    <form class="col-md-4" action="formulaire.php" method="POST">
+        <div class="mb-3">
+          <label  class="form-label"> Cin</label>
+          <input type="number" name="cin" class="form-control" required >
+        </div>
+        <div class="mb-3">
+          <label  class="form-label">Nom & prenom</label>
+          <input type="text" name="np" class="form-control" required >
+        </div>
+        <div class="mb-3">
+          <label  class="form-label">Email </label>
+          <input type="email" name="email" class="form-control" required >
+        </div>
+        <div class="mb-3">
+          <label  class="form-label">Mot de passe</label>
+          <input type="password" name="password" class="form-control" required >
+        </div>
+        <div class="mb-3">
+          <label  class="form-label">Redoublement</label>
+          <input type="radio" name="re" value="oui" required > Oui
+          <input type="radio" name="re" value="non" required > Non
+        </div>
+        <div class="mb-3">
+          <label  class="form-label">Universite</label>
+          <select name="universite" class="form-control" required>
+              <option value=""></option>
+              <option value="Enet'com">Enet'com</option>
+              <option value="FSG">FSG</option>
+              <option value="ISIMS">ISIMS</option>
+          </select>
+        </div>
+        <button type="reset" class="btn btn-secondary">vider</button>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
